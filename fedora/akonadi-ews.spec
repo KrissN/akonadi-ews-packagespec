@@ -2,7 +2,7 @@
 
 Summary:            Microsoft Exchange resource for Akonadi using the Exchange Web Services (EWS) protocol
 Name:               akonadi-ews
-Version:            0.8.0
+Version:            0.8.1
 Release:            1%{?dist}
 License:            GPLv2+
 Group:              Applications/Productivity
@@ -52,6 +52,9 @@ make %{?_smp_mflags} -C %{_target_platform}
 %{_kf5_datadir}/icons/*
 
 %changelog
+* Sat Apr 30 2016 Krzysztof Nowicki <krissn@op.pl> - 0.8.0-1
+- Version 0.8.1
+
 * Sat Apr 30 2016 Krzysztof Nowicki <krissn@op.pl> - 0.8.0-1
 - Initial version
 
