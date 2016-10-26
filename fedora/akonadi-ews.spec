@@ -12,7 +12,11 @@ BuildRequires:      cmake
 BuildRequires:      gcc-c++
 BuildRequires:      extra-cmake-modules
 BuildRequires:      kf5-kio-devel
+%if 0%{?fedora} <= 23
 BuildRequires:      kf5-akonadi-devel
+%else
+BuildRequires:      kf5-akonadi-server-devel
+%endif
 BuildRequires:      kf5-akonadi-mime-devel
 BuildRequires:      libxslt
 BuildRequires:      kf5-kmime-devel
