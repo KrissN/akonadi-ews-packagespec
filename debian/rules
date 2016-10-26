@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+.PHONY: override_dh_strip
+
+override_dh_strip:
+	dh_strip --dbg-package=akonadi-ews-dbg
+
+override_dh_auto_install:
+	dh_auto_install --destdir=debian/akonadi-ews

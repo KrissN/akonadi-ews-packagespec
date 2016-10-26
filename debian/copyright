@@ -1,0 +1,12 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: KrissN
+Upstream-Contact: Krzysztof Nowicki <krissn@op.pl>
+Source: https://github.com/KrissN/akonadi-ews
+
+Files: *
+Copyright: 2015-2016 Krzysztof Nowicki
+License: LGPL-2+
+
+Files: debian/*
+Copyright: 2016 Krzysztof Nowicki
+License: GPL-2+

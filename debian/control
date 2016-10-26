@@ -1,0 +1,49 @@
+Source: akonadi-ews
+Maintainer: Krzysztof Nowicki <krissn@op.pl>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9), kio-dev (>= 5.18), cmake (>= 3.1.0),
+ libkf5akonadi-dev (>= 15.08.0), libkf5akonadimime-dev (>= 15.08.0),
+ xsltproc, libkf5mime-dev (>= 15.08.0), libkf5calendarcore-dev (>= 15.08.0),
+ libkf5contacts-dev (>= 15.08.0), libkf5codecs-dev (>= 5.18),
+ libkf5kdelibs4support-dev (>= 5.18), libkf5wallet-dev (>= 5.18),
+ libkf5widgetsaddons-dev (>= 5.18), extra-cmake-modules (>= 5.18),
+ qtbase5-dev (>= 5.5)
+
+Package: akonadi-ews
+Architecture: any
+Depends: ${shlib:Depends}, ${misc:Depends}, libqt5core5a (>= 5.5), kio (>= 5.18),
+ libkf5akonadicore5 (>= 15.08.0), libkf5akonadimime5 (>= 15.08.0),
+ libkf5mime5 (>= 15.08.0), libkf5calendarcore5 (>= 15.08.0),
+ libkf5contacts5 (>= 15.08.0), libkf5codecs5 (>= 5.18),
+ libkf5kdelibs4support5 (>= 5.18), libkf5wallet5 (>= 5.18),
+ libkf5widgetsaddons5 (>= 5.18)
+Description: Akonadi resource for Microsoft Exchange Web Services (EWS)
+ This Akonadi resource provides the ability to use Microsoft Exchange
+ accounts with KDE PIM applications like KMail and KOrganizer.
+ .
+ It allows to use KDE PIM applications with Exchange mailboxes, for
+ which the server administrator has not enabled access using standard
+ e-mail protocols (IMAP, POP3 or SMTP). Additionally since the
+ resource communicates with Exchange using its native protocol (also
+ used by Microsoft Outlook) it allows to use the full capabilities of
+ Exchange which are not accessible over IMAP or POP3.
+
+Package: akonadi-ews-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: ${misc:Depends}, akonadi-ews (= ${binary:Version})
+Description: Debug symbols for akonadi-ews
+ This Akonadi resource provides the ability to use Microsoft Exchange
+ accounts with KDE PIM applications like KMail and KOrganizer.
+ .
+ It allows to use KDE PIM applications with Exchange mailboxes, for
+ which the server administrator has not enabled access using standard
+ e-mail protocols (IMAP, POP3 or SMTP). Additionally since the
+ resource communicates with Exchange using its native protocol (also
+ used by Microsoft Outlook) it allows to use the full capabilities of
+ Exchange which are not accessible over IMAP or POP3.
+ .
+ This package contains debug symbols for akonadi-ews

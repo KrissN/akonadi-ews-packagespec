@@ -1,0 +1,18 @@
+akonadi-ews (0.8.0.0.2-1) xenial; urgency=medium
+
+  * Test folder tree retrieval workaround (attempt 2)
+
+ -- Krzysztof <krzysn@vubuntu1604>  Mon, 09 May 2016 21:20:34 +0200
+
+akonadi-ews (0.8.0.0.1-1) xenial; urgency=medium
+
+  * Test folder tree retrieval workaround
+
+ -- Krzysztof <krzysn@vubuntu1604>  Mon, 09 May 2016 19:57:48 +0200
+
+akonadi-ews (0.8.0-1ubuntu1) xenial; urgency=medium
+
+  [ Krzysztof Nowicki ]
+  * Initial release.
+
+ -- Krzysztof <krzysn@vubuntu1604>  Mon, 09 May 2016 19:56:35 +0200
